@@ -50,22 +50,84 @@ font-family: 'Raleway', sans-serif;
     justify-content: space-around;
     margin-right: 30px;
     padding: 20px;
+    align-items: stretch;
 }
 .page-nav-list li {
-    margin-left: 20px;
     list-style: none;
+    margin: 20px;
+    padding-left: 45px;
 }
 .page-nav-list a {
-
     text-transform: uppercase;
     font: normal normal bold 11px/15px Open Sans;
     letter-spacing: 3.28px;
     color: #A5A5A5;
     opacity: 1;
     text-decoration: none;
+    line-height: 20px;
 }
 .page-nav-list a:hover {
     border-bottom: 4px solid #08A6E4;
     color: black;
     opacity: 1;
 }
+/* sekcja 1 */
+
+.section-header {
+    height: 712px;
+    background-image: url("../assets/Background.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.hero-container h1 {
+    padding-top: 70px;
+    text-align: center;
+    font: normal normal normal 47px/55px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+
+}
+
+.hero-container p {
+    text-align: center;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding: 5px;
+    margin: 5px;
+}
+
+.buttons {
+    text-align: center;
+    font: normal normal bold 14px/21px Open Sans;
+    letter-spacing: 0px;
+    opacity: 1;
+    background: #03a6ff;
+    border-radius: 40px;
+    margin:20px;
+    padding: 20px 100px;
+}
+.buttons a {
+    text-decoration: none;
+    color: white;
+}
+/* sekcja 2 zrobione */
+
+
