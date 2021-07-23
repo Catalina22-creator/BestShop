@@ -8,7 +8,7 @@ font-family: 'Raleway', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 :root {
     --color-primary: #08A6E4;
@@ -272,11 +272,12 @@ font-family: 'Raleway', sans-serif;
 .benefits__single {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 37px;
     border-radius: 5px;
     border: 1px solid #E8E9ED;
+    padding-top: -50px;
 }
 
 .benefits__text {
@@ -302,10 +303,8 @@ font-family: 'Raleway', sans-serif;
 
 .benefits__description {
     margin-top: 30px;
-    line-height: 1.375rem;
     text-align: left;
     font: normal normal normal 16px/22px Open Sans;
-    letter-spacing: 0px;
     color: #000000;
     opacity: 1;
     border-bottom: 5px solid #FB3B64;
@@ -316,6 +315,12 @@ font-family: 'Raleway', sans-serif;
 }
 .benefits__single--phone .benefits__description {
     border-bottom: 4px solid deepskyblue;
+    display: flex;
+    text-align: left;
+    float: left;
+}
+.benefits__text .benefits__description  {
+
 }
 
 .benefits__single--solo .benefits__description {
@@ -375,7 +380,8 @@ font-family: 'Raleway', sans-serif;
 }
 
 .benefits__single--phone .benefits__text {
-    margin: 70px 0;
+
+
 }
 
 .benefits__double {
@@ -416,10 +422,13 @@ font-family: 'Raleway', sans-serif;
 .pricing-container{
     margin: 100px auto;
     display: flex;
+    height: 120%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: auto;
+
+
 }
 .pricing-container  h2 {
     text-align: center;
@@ -461,44 +470,60 @@ font-family: 'Raleway', sans-serif;
     font-size: 2.875rem;
     font-family: var(--font-open-sans);
     font-weight: 300;
-    margin-top: 25px;
 }
 .pricing__box--basic .pricing__price {
     color: #FB3B64FF;
 }
 .pricing__box--professional .pricing__price {
     color:deepskyblue;
+    margin-top: 25px;
 }
 .pricing__box--premium .pricing__price {
     color: lightseagreen;
+    margin-top: 15px;
 }
 .pricing__box--basic {
     border: 2px solid #FB3B64FF;
 }
 .pricing__box--basic .pricing__price {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .pricing__box--premium {
     border: 2px solid lightseagreen;
+    padding-top: 20px;
 }
 .pricing__box--professional {
     border: 2px solid deepskyblue;
-    padding: 40px;
+    padding: 30px;
 }
 /* sytlowanie niebieskiego boxa */
 .pricing__limited {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 1rem;
-    font-family: var(--font-raleway);
+    font-family: font: normal normal bold 12px/1px Raleway;
     font-weight: 700;
+}
+.pricing__box .pricing__box--professional .pricing__limited {
+    padding-top: -5px;
 }
 .pricing__items {
     text-align: center;
 }
 .pricing__item {
-    font-size: 14px;
-    margin-bottom: 20px;
+    text-align: center;
+    font: normal normal normal 14px/35px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.pricing__box--professional .pricing__type{
+  margin-top: -15px;
+}
+.pricing__box--premium .pricing__details .pricing__type {
+    margin-top: -15px;
+    padding-bottom: 10px;
 }
 .pricing__item:before {
     content: "";
@@ -511,19 +536,62 @@ font-family: 'Raleway', sans-serif;
 .pricing__item--not:before {
     background-image: url("../assets/Close.svg");
 }
+/*stylowanie guzików */
 .pricing__box .btn {
     position: relative;
-    bottom: -25px;
+    bottom: -10px;
     font-size: 0.8125rem;
 }
+.pricing__box .btn--primary {
+    background-color: #03a6ff;
+    text-decoration: none;
+    bottom: -50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: left;
+    font: normal normal bold 16px/45px Open Sans;
+    color: #FFFFFF;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 23px;
+    opacity: 1;
+}
+.pricing__box .btn--primary a{
+    text-decoration: none;
+}
+.pricing__box--basic .btn {
+    background-color: #FB3B64FF;
+    text-decoration: none;
+    bottom: -20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: left;
+    font: normal normal bold 16px/45px Open Sans;
+    color: #FFFFFF;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 23px;
+    opacity: 1;
+}
+.pricing__box--premium .btn {
+    background-color: lightseagreen;
+    text-decoration: none;
+    bottom: -20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: left;
+    font: normal normal bold 16px/45px Open Sans;
+    color: #FFFFFF;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 23px;
+    opacity: 1;
+}
 
-/*ostylować bottony */
-
-/* poniżej sekcja kontakt */
+/* poniżej sekcja KONTAKT */
 .contact {
-    padding: 80px 100px 100px;
+    padding: 100px 50px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
 }
 
 .contact__column {
@@ -532,7 +600,7 @@ font-family: 'Raleway', sans-serif;
 
 .contact__title {
     text-align: left;
-    font: normal normal normal 49px/57px Raleway;
+    font: normal normal normal 55px/60px Raleway;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
@@ -541,21 +609,158 @@ font-family: 'Raleway', sans-serif;
 .contact__instruction {
     margin: 22px 0 42px;
     text-align: left;
-    font: normal normal normal 16px/22px Open Sans;
+    font: normal normal normal 18px/24px Open Sans;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
 }
-/* ułożenie i stylowanie sekcji  lewej */
+/* ułożenie i stylowanie czesci  lewej */
 .contact__details a {
     text-decoration: none;
     text-align: left;
-    font: normal normal 600 16px/22px Open Sans;
-    letter-spacing: 0px;
+    font: normal normal 600 18px/24px Open Sans;
+    letter-spacing: 1px;
     color: #A5A5A5;
     opacity: 1;
     margin-right: 10px;
 }
-/* ostylowanie kontaktów */
+/* ostylowanie czesci prawej formularza */
+.form {
+    display: flex;
+    flex-direction: column;
 
-/* piątek ostylowac prawa czesc i stopke + poprawianie pricingu  */
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form__field:first-of-type {
+    margin-bottom: 42px;
+}
+/* ostylowanie name i email*/
+.form__label {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    text-align: left;
+    font: normal normal bold 16px/21px Open Sans;
+    letter-spacing: 3.28px;
+    opacity: 1;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    background-color: transparent;
+    line-height: 2.625rem;
+}
+/*kontener checkbox */
+.form__consent {
+    margin-top: 30px;
+}
+
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.375rem;
+}
+
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* odznaczenie checkboxa */
+.form__checkbox .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+.form__checkbox .consent__text{
+    font: normal normal normal 17px/25px Open Sans;
+}
+.form__checkbox input:checked ~ .checkbox {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+/* przycisk i guzik */
+.form__checkbox .consent__text {
+    margin: 0 10px;
+    font-size: 0.75rem;
+    color: var(--color-grey);
+    line-height: 17px;
+}
+
+.contact__column .btn  {
+    padding: 20px 97px;
+    align-self: flex-end;
+    margin-top: 20px;
+    color: white;
+    background: #08A6E4;
+    border: none;
+    border-radius: 35px;
+    opacity: 1;
+    font: normal normal bold 17px/22px Open Sans;
+}
+
+/* Footer */
+
+.footer {
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 40px 0;
+    height: auto;
+    width: auto;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -200px;
+
+}
+
+.footer__copy {
+    text-align: left;
+    font: normal normal normal 14px/15px Open Sans;
+    opacity: 1;
+    color: var(--color-grey);
+    margin-top: 6px;
+
+}
+.footer__info a{
+    text-decoration: none;
+    text-align: left;
+    font: normal normal 300 30px/30px Raleway;
+    color: #08A6E4;
+    opacity: 1;
+}
+.footer__icons a:first-of-type {
+    margin-right: 25px;
+}
+.footer__icons a {
+    margin-right: -20px;
+}
+
+/* do poprawienia zostaje ten kwadrat za laptopem w sekkcji Benefits */
