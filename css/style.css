@@ -26,7 +26,7 @@ font-family: 'Raleway', sans-serif;
 
 .container {
     margin: 0 auto;
-    max-width: 1352px;
+    max-width: 1400px;
 }
 
 .header .header-container {
@@ -344,21 +344,23 @@ font-family: 'Raleway', sans-serif;
 }
 
 .benefits__single--notebook .benefits__image img {
+    content: "";
     width: 520px;
     height: auto;
     background: #FB3B64 0% 0% no-repeat padding-box;
     border-radius: 41px;
     opacity: 1;
     padding: 20px;
-    /*transform: rotate(45deg);*/
+    
 }
 /* sekcja do poprawy kwadrat czerwony */
+/*telefon i niebieskie circle */
 .benefits__single--phone {
     flex-direction: row-reverse;
     padding: 0 20px 0 70px;
 }
 
-.benefits__single--phone .benefits__image::before {
+.benefits__single--phone .benefits__image:before {
     content: "";
     width: 330px;
     height: 320px;
