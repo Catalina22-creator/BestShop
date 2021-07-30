@@ -319,39 +319,46 @@ font-family: 'Raleway', sans-serif;
     text-align: left;
     float: left;
 }
-.benefits__text .benefits__description  {
 
-}
 
 .benefits__single--solo .benefits__description {
     border-bottom: 4px solid #55DFB4;
     margin-right: 100px;
     text-align: left;
 }
-
-.benefits__image {
+.rectangle {
+    margin-top: 50px;
+    margin-left: 370px;
+    margin-bottom: -170px;
+    background: #FB3B64 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    width: 200px;
+    height: 200px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     position: relative;
-}
 
-.benefits__image img {
-    position: relative;
-    z-index: 2;
 }
-
 .benefits__single--notebook .benefits__image {
-    margin-right: 117px;
-    margin-bottom: 38px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
 }
 
 .benefits__single--notebook .benefits__image img {
     content: "";
     width: 520px;
     height: auto;
-    background: #FB3B64 0% 0% no-repeat padding-box;
-    border-radius: 41px;
     opacity: 1;
     padding: 20px;
-    
+
+}
+.benefits__image {
+    position: relative;
+}
+
+.benefits__image img {
+    position: relative;
+
 }
 /* sekcja do poprawy kwadrat czerwony */
 /*telefon i niebieskie circle */
@@ -372,9 +379,7 @@ font-family: 'Raleway', sans-serif;
     top: -20px;
 }
 
-.benefits__single--phone .benefits__image {
 
-}
 
 .benefits__single--phone .benefits__image img {
     width: 426px;
