@@ -1,0 +1,144 @@
+@import "sass/style.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+:root {
+  --color-primary: #08A6E4;
+  --color-primary-shadow: rgba(7, 172, 230, .16);
+  --color-redish: #FB3B64;
+  --color-green: #55DFB4;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #A5A5A5;
+  --color-light-grey: #F7F7F7;
+  --button-radius: 35px;
+  --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.header .header-container {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+
+
+.page-title {
+  color: #08A6E4;
+  text-align: left;
+  font: normal normal 300 32px/37px Raleway;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-left: 20px;
+}
+
+.page-nav {
+}
+
+.page-nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+.page-nav-list li {
+  list-style: none;
+  margin: 20px;
+  padding-left: 45px;
+  font-weight: 300;
+}
+
+.page-nav-list a {
+  text-transform: uppercase;
+  font: 15px Open Sans;
+  letter-spacing: 3.28px;
+  color: #A5A5A5;
+  opacity: 1;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.page-nav-list a:hover {
+  border-bottom: 4px solid #08A6E4;
+  color: black;
+  opacity: 1;
+}
+
+/* sekcja 1 */
+
+.section-header {
+  height: 800px;
+  background-image: url("../assets/Background.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  justify-content: center;
+
+}
+
+.hero-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.hero-container h1 {
+  padding-top: 80px;
+  text-align: center;
+  font: normal normal normal 47px/55px Raleway;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+
+}
+
+.hero-container p {
+  text-align: center;
+  font: normal normal normal 16px/22px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+.buttons {
+  text-align: center;
+  font: normal normal bold 16px/25px Open Sans;
+  letter-spacing: 0px;
+  opacity: 1;
+  background: #03a6ff;
+  border-radius: 40px;
+  margin: 20px;
+  padding: 25px 110px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+}

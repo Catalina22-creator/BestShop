@@ -1,0 +1,167 @@
+/* sekcja 4 */
+
+.pricing-container{
+  margin: 100px auto;
+  display: flex;
+  height: 120%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+
+
+}
+.pricing-container  h2 {
+  text-align: center;
+  font: normal normal normal 27px Raleway;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+
+}
+.pricing-container .pricing__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* ułożenie boxów */
+
+.pricing__box {
+  width: 420px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+
+}
+/*kształt boxów */
+
+.pricing__details {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.pricing__type {
+  font: normal normal normal 25px/41px Open Sans;
+  font-weight: 700;
+}
+.pricing__price {
+  font-size: 2.875rem;
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+}
+.pricing__box--basic .pricing__price {
+  color: #FB3B64FF;
+}
+.pricing__box--professional .pricing__price {
+  color:deepskyblue;
+  margin-top: 25px;
+}
+.pricing__box--premium .pricing__price {
+  color: lightseagreen;
+  margin-top: 15px;
+}
+.pricing__box--basic {
+  border: 2px solid #FB3B64FF;
+}
+.pricing__box--basic .pricing__price {
+  margin-bottom: 50px;
+}
+.pricing__box--premium {
+  border: 2px solid lightseagreen;
+  padding-top: 20px;
+}
+.pricing__box--professional {
+  border: 2px solid deepskyblue;
+  padding: 30px;
+}
+/* sytlowanie niebieskiego boxa */
+.pricing__limited {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: font: normal normal bold 12px/1px Raleway;
+  font-weight: 700;
+}
+.pricing__box .pricing__box--professional .pricing__limited {
+  padding-top: -5px;
+}
+.pricing__items {
+  text-align: center;
+}
+.pricing__item {
+  text-align: center;
+  font: normal normal normal 14px/35px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+.pricing__box--professional .pricing__type{
+  margin-top: -15px;
+}
+.pricing__box--premium .pricing__details .pricing__type {
+  margin-top: -15px;
+  padding-bottom: 10px;
+}
+.pricing__item:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../assets/Checkmark-1.svg");
+}
+.pricing__item--not:before {
+  background-image: url("../assets/Close.svg");
+}
+/*stylowanie guzików */
+.pricing__box .btn {
+  position: relative;
+  bottom: -10px;
+  font-size: 0.8125rem;
+}
+.pricing__box .btn--primary {
+  background-color: #03a6ff;
+  text-decoration: none;
+  bottom: -50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: left;
+  font: normal normal bold 16px/45px Open Sans;
+  color: #FFFFFF;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 23px;
+  opacity: 1;
+}
+.pricing__box .btn--primary a{
+  text-decoration: none;
+}
+.pricing__box--basic .btn {
+  background-color: #FB3B64FF;
+  text-decoration: none;
+  bottom: -20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: left;
+  font: normal normal bold 16px/45px Open Sans;
+  color: #FFFFFF;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 23px;
+  opacity: 1;
+}
+.pricing__box--premium .btn {
+  background-color: lightseagreen;
+  text-decoration: none;
+  bottom: -20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: left;
+  font: normal normal bold 16px/45px Open Sans;
+  color: #FFFFFF;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 23px;
+  opacity: 1;
+}
