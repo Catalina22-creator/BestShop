@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-
+  font: inherit;
   vertical-align: baseline;
 }
 
@@ -128,7 +128,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-
+  content: none;
 }
 
 table {
@@ -471,7 +471,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 300;
-  color: #08A6E4;
+  color: #5e00ff;
 }
 
 .btn {
@@ -483,12 +483,12 @@ h2 {
   border: none;
 }
 .btn--primary {
-  background-color: #08A6E4;
+  background-color: #5e00ff;
   border-radius: 35px;
-  box-shadow: 3px 10px 14px rgba(7, 172, 230, 0.16);
+  box-shadow: 3px 10px 14px #bb8c8c;
 }
 .btn--redish {
-  background-color: rgba(255, 0, 144, 0.5);
+  background-color: #ff006a;
 }
 .btn--green {
   background-color: #55DFB4;
@@ -524,7 +524,7 @@ h2 {
 }
 .header .nav__link:hover {
   color: #A5A5A5;
-  border-color: #08A6E4;
+  border-color: #5e00ff;
 }
 @media (min-width: 400px) and (max-width: 792px) {
   .header .nav__link:hover {
@@ -584,7 +584,7 @@ h2 {
   height: 2px;
   display: block;
   margin-bottom: 3px;
-  background-color: #08A6E4;
+  background-color: #5e00ff;
   transition: 0.4s all ease;
 }
 .header .menu__toggle span:last-child {
@@ -684,14 +684,14 @@ h2 {
   }
 }
 .statistics__single:nth-child(1) .statistics__circle {
-  background-color: rgba(255, 0, 144, 0.5);
+  background-color: #ff0059;
 }
 .statistics__single:nth-child(1) .statistics__img {
   top: 0;
   left: 45%;
 }
 .statistics__single:nth-child(2) .statistics__circle {
-  background-color: #08A6E4;
+  background-color: #5e00ff;
 }
 .statistics__single:nth-child(2) .statistics__img {
   top: 14px;
@@ -729,7 +729,7 @@ h2 {
  */
 .benefits {
   padding: 100px 0;
-  background-color: #F7F7F7;
+  background-color: rgba(187, 140, 156, 0.89);
 }
 @media (max-width: 1024px) {
   .benefits {
@@ -762,7 +762,7 @@ h2 {
 }
 .benefits__single--notebook {
   background: white;
-  --accent-color: #ff0059;
+  --accent-color: $ColorPink;
 }
 .benefits__single--notebook .benefits__image {
   margin-right: 117px;
@@ -777,7 +777,7 @@ h2 {
   content: "";
   width: 180px;
   height: 180px;
-  background-color: rgba(255, 0, 144, 0.5);
+  background-color: #ff006a;
   display: block;
   border-radius: 40px;
   position: absolute;
@@ -814,7 +814,7 @@ h2 {
   background: white;
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
-  --accent-color: #08A6E4;
+  --accent-color: #5e00ff;
 }
 @media (max-width: 1024px) {
   .benefits__single--phone .benefits__image {
@@ -825,7 +825,7 @@ h2 {
   content: "";
   width: 320px;
   height: 320px;
-  background-color: #08A6E4;
+  background-color: #5e00ff;
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -996,7 +996,7 @@ h2 {
   background-color: var(--accent-color);
 }
 .pricing__box--basic {
-  --accent-color: rgb(255, 0, 89);
+  --accent-color: #ff006a;
 }
 .pricing__box--basic .pricing__price {
   margin-bottom: 30px;
@@ -1007,10 +1007,10 @@ h2 {
   }
 }
 .pricing__box--professional {
-  --accent-color: #08A6E4;
+  --accent-color: #5e00ff;
   width: 400px;
   margin: 0 40px;
-  box-shadow: 5px 1px 27px rgba(7, 172, 230, 0.16);
+  box-shadow: 5px 1px 27px #bb8c8c;
 }
 @media (max-width: 1352px) {
   .pricing__box--professional {
@@ -1082,10 +1082,10 @@ h2 {
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../scss/img/Checkmark-1.svg");
+  background-image: url("../../img/Checkmark-1.svg");
 }
 .pricing__item--not::before {
-  background-image: url("../scss/img/Close.svg");
+  background-image: url("../../img/Close.svg");
 }
 
 .contact {
@@ -1200,7 +1200,7 @@ h2 {
   width: 0;
 }
 .form__checkbox input:checked ~ .checkbox {
-  background-image: url(../scss/img/Checkmark.svg);
+  background-image: url(../../img/Checkmark.svg);
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
