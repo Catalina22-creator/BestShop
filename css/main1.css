@@ -86,8 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+
   vertical-align: baseline;
 }
 
@@ -129,8 +128,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+
 }
 
 table {
@@ -764,7 +762,7 @@ h2 {
 }
 .benefits__single--notebook {
   background: white;
-  --accent-color: #fb3b64;
+  --accent-color: #ff0059;
 }
 .benefits__single--notebook .benefits__image {
   margin-right: 117px;
@@ -972,7 +970,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #08A6E4;
+  border: 1px solid var(--accent-color);
   /*** Basic Box ***/
   /*** Professional Box **/
   /*** Premium Box ***/
@@ -998,7 +996,7 @@ h2 {
   background-color: var(--accent-color);
 }
 .pricing__box--basic {
-  background: #55DFB4;
+  --accent-color: rgb(255, 0, 89);
 }
 .pricing__box--basic .pricing__price {
   margin-bottom: 30px;
@@ -1009,7 +1007,7 @@ h2 {
   }
 }
 .pricing__box--professional {
-  border: rgba(255, 0, 144, 0.5);
+  --accent-color: #08A6E4;
   width: 400px;
   margin: 0 40px;
   box-shadow: 5px 1px 27px rgba(7, 172, 230, 0.16);
@@ -1028,7 +1026,7 @@ h2 {
   margin-bottom: 25px;
 }
 .pricing__box--premium {
-  border: #55DFB4;
+  --accent-color: #55DFB4;
 }
 .pricing__details {
   margin-top: 34px;
@@ -1051,7 +1049,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin-top: 25px;
-  color: black;
+  color: var(--accent-color);
 }
 .pricing__limited {
   text-align: center;
@@ -1084,10 +1082,10 @@ h2 {
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../assets/Checkmark-1.svg");
+  background-image: url("../scss/img/Checkmark-1.svg");
 }
 .pricing__item--not::before {
-  background-image: url("../assets/Close.svg");
+  background-image: url("../scss/img/Close.svg");
 }
 
 .contact {
@@ -1202,7 +1200,7 @@ h2 {
   width: 0;
 }
 .form__checkbox input:checked ~ .checkbox {
-  background-image: url(../assets/Checkmark.svg);
+  background-image: url(../scss/img/Checkmark.svg);
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
